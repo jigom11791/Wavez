@@ -10,30 +10,64 @@
 				color: white;
 				font-family: "Noto sans JP", sans-serif;
 				width: 226px;
-				height: 312px;
+				height: 330px;
 				padding: 0px;
 				margin: 0px;
 			}
-			hr {
+			hr, p, h2{
+				margin: 0px;
 				padding: 0px;
 				color: white;
 			}
 			#content{
-				margin: auto;
 				padding:10px;
 				height: 80%;
 			}
 			.deal_message {
 				margin: 0px;
 				padding: 0px;
+				font-size: 90%;
 			}
 			#graph {
-				
+				height: 50%;
+				border: 1px solid gray;
+				border-radius: 15px;
+				background-color: #666699;
+				margin-top: 5px;
+				margin-bottom: 5px;
 			}
 			#footer,#header {
-				margin: auto;
 				text-align: center;
-				height: 10%;
+				height: 5%;
+			}
+			#footer {
+				padding: auto;
+			}
+			#button {
+				padding: auto;
+			}
+			button {
+				border: 1px solid white;
+				background-color: #8F8FBF;
+				border-radius: 5px;
+				height: 35px;
+				width: 200px;
+				color: white;
+				font-size: 100%;
+				font-weight: 900;
+				margin-bottom: 5px;
+				margin-top: 10px;
+			}
+			button:hover {
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+			}
+			#deal_image{
+				float: left;
+				margin: auto;
+				margin-right: 5px;
+				margin-top: 5px;
+				padding-top: 5px;
+				
 			}
 			
 		</style>
@@ -42,12 +76,24 @@
 	<div id="header"></div>
 	<hr/>
 	<div id="content">
-	<div class="deal_message">
-		<p>Nice, it's a deal</p>
+	
+	<div id="container">
+		<div id="deal_image">
+			<img src="images\checkmark.png" alt="check mark" height="20px" width="20px">
+		</div>
+		
+		<div class="deal_message" id="top">
+			<h2>Nice, it's a deal!</h2>
+			<p>The price has recently dropped</p>
+		</div>
 	</div>
+	
 	<div id="graph"></div>
 	<div class="deal_message">
 		<p>This item is lower than it has been in the last 30 days, nice find!</p>
+	</div>
+	<div id="button">
+		<button type="button">More Details</button>
 	</div>
 	</div>
 	
