@@ -5,11 +5,16 @@ body {
     background-color:  #3e3e4f;
     font-family: "Noto sans JP", sans-serif;
 }
-#header {
-    width: 100%
+.navbar{
+    padding: 0% 7%;
 }
-#logobar, #navbar{
-    padding: 0%, 5%;
+#logobar{
+    background-color: #000;
+}
+.navbar {
+    background-color: #26262c;
+    border-top: 1px solid #68686b;
+    border-bottom: 1px solid #68686b;
 }
 a.nav-link{
     color: white;
@@ -44,18 +49,30 @@ a.nav-link{
     margin-right: 40px;
 }
 .card-img-top {
-    width: 300px;
-    height: 
+    max-width: 300px;
+    padding: auto;
 }
 .dropdown-menu {
     min-width: 400px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: auto;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
 }
 @media (max-width: 992px){
     .flex-container {
         flex-direction: column;
         align-items:center;
     }
-    body {
+    .navbar {
         padding: 0px;
     }
 	.left-card {
