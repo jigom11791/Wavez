@@ -11,16 +11,39 @@ a.nav-link{
 }
 #content {
     background-color: #3e3e4f;
-    padding-bottom:
+    margin-bottom: 0px;
 }
 .flex-container {
     display: flex;
     flex-direction: row;
     font-size: 30px;
     text-align: center;
+    justify-content: center;
 }
-@media (max-width: 800px){
+#banner img{
+    width: 100%;
+}
+#daily-deals{
+    padding: 8%;
+}
+.card {
+    min-width: 400px;
+    margin: 20px;
+    padding: 5px;
+
+}
+.left-card{
+    margin-right: 40px;
+}
+.card-img-top {
+    width: 400px;
+}
+@media (max-width: 992px){
     .flex-container {
         flex-direction: column;
+        align-items:center;
+    }
+    body {
+        padding: 0px;
     }
 }
