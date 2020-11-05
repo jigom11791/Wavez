@@ -2,9 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 body {
-    background-color: #8b8baf;
+    background-color:  #3e3e4f;
     font-family: "Noto sans JP", sans-serif;
-    padding: 0% 5%;
+}
+#header {
+    width: 100%
+}
+#logobar, #navbar{
+    padding: 0%, 5%;
 }
 a.nav-link{
     color: white;
@@ -24,19 +29,26 @@ a.nav-link{
     width: 100%;
 }
 #daily-deals{
-    padding: 8%;
+    padding: 8px;
 }
 .card {
-    min-width: 400px;
     margin: 20px;
     padding: 5px;
-
+}
+.card p{
+    font-size: 16px;
+    padding:0px;
+    margin-bottom: 0px;
 }
 .left-card{
     margin-right: 40px;
 }
 .card-img-top {
-    width: 400px;
+    width: 300px;
+    height: 
+}
+.dropdown-menu {
+    min-width: 400px;
 }
 @media (max-width: 992px){
     .flex-container {
@@ -46,4 +58,7 @@ a.nav-link{
     body {
         padding: 0px;
     }
+	.left-card {
+		padding-right: 0px;
+	}
 }
