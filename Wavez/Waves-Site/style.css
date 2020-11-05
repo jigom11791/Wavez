@@ -2,71 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 body {
-    background-color: #3e3e4f;
-    color: white;
+    background-color: #8b8baf;
     font-family: "Noto sans JP", sans-serif;
     padding: 0% 5%;
 }
-.topnav input[type=text] {
-    font-size: 18px;
-    margin-top: 13px;
-    margin-right: 13px;
-}
-ul.topnav, ul.header{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    width: 100%;
-}
-ul.topnav {
-    background-color: #333;
-    font-size: 17px;
-}
-ul.topnav li, ul.header li{
-    float: left;
-}
-ul.topnav li.right, ul.header li.right{
-    float: right;
-}
-ul.topnav li a, ul.header li a {
-    display: block;
+a.nav-link{
     color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-ul.topnav li a:hover{
-    background-color: #111;
 }
 #content {
-    padding: 3%;
+    background-color: #3e3e4f;
+    padding-bottom:
 }
-.left-column {
-    float: left;
-    width: 25%;
-    height: 280px;
-    margin-right: 5%;
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
 }
-.middle-column {
-    float: left;
-    width: 30%;
-    height: 280px;
-    margin-right: 5%;
-}
-.right-column {
-    float: right;
-    width: 30%;
-    height: 280px;
-}
-.middle-column, .right-column{
-    background-color: white;
-    color: black;
-    padding: 5px;
-}
-.middle-column:hover, .right-column:hover{
-    border: 1px solid black;
-}
-.center {
-    margin: auto;
+@media (max-width: 800px){
+    .flex-container {
+        flex-direction: column;
+    }
 }
