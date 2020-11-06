@@ -8,6 +8,7 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	
 <body>
@@ -86,27 +87,40 @@
 			<ul class="navbar-nav header mr-auto">
 				<li class="nav-item">
 					<div class="dropdown">
-						<a class="nav-link" href="#">Plugins</a>
-						<div class="dropdown-content">
-							<nav class="navbar navbar-expand-lg navbar-dark">
-								<ul class="navbar-nav">
-									<li class="nav-item"><a class="nav-link" href="#">All Plugins</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Equalizers</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Compressors</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Effects</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Limiters</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Others</a></li>
-								</ul>
-							</nav>
-						</div>
+						<a class="nav-link" id="plugins-link" href="#">Plugins</a>
 					</div>
 				</li>
-				<li class="nav-item"><a class="nav-link" href="#">Bundles</a></li>
+				<li class="nav-item">
+					<a class="nav-link" id="bundles-link" href="#">Bundles</a>
+				</li>
 			</ul>
 			<input type="text" placeholder="Search" aria-label="Search">
 			<span class="bi-search"></span>
 		</div>
 	</nav>
+	<div class="dropdown-content">
+		<nav class="navbar navbar-expand-lg navbar-dark" id="plugins-nav">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#">All Plugins</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Equalizers</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Compressors</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Effects</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Limiters</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Others</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="dropdown-content">
+		<nav class="navbar navbar-expand-lg navbar-dark" id="plugins-nav">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#">All Bundles</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Post Production Bundles</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Mastering Bundles</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Analog Modeled Bundles</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Other Bundles</a></li>
+			</ul>
+		</nav>
+	</div>
 </div>
 
 	<!--Content of the page-->
@@ -155,6 +169,7 @@
 	<!-------Footer------------>
 <div id="footer">
 	<p>Created by WAVEZ</p>
-</div>	
+</div>
+<script src="topbar.js"></script>
 </body>
 </html>

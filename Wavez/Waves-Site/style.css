@@ -53,19 +53,14 @@ a.nav-link{
     padding: auto;
 }
 .dropdown-menu {
-    min-width: 400px;
-}
-.dropdown {
-    position: relative;
-    display: inline-block;
+    width: 300px;
 }
 .dropdown-content{
     display: none;
-    position: absolute;
-    width: auto;
+    width: 100%;
 }
-.dropdown:hover .dropdown-content {
-    display: flex;
+.dropdown-content .navbar{
+    padding: 8px 7%;
 }
 @media (max-width: 992px){
     .flex-container {
