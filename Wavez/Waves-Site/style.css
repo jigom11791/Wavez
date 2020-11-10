@@ -45,12 +45,25 @@ a.nav-link{
     padding:0px;
     margin-bottom: 0px;
 }
+.card-content {
+    margin: 5px 0px;
+}
 .left-card{
     margin-right: 40px;
 }
-.card-img-top {
-    max-width: 300px;
+.card-header, .card-footer a{
+    font-size: 20px;
+}
+.card-img {
+    width: 300px;
+    height: 300px;
     padding: auto;
+}
+.card-footer .btn {
+    width: 50%;
+}
+.card-btn-left {
+    margin-right: 15px;
 }
 .dropdown-menu {
     width: 300px;
@@ -61,6 +74,16 @@ a.nav-link{
 }
 .dropdown-content .navbar{
     padding: 8px 7%;
+}
+#footer {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #000;
+    text-align: center;
+    justify-content: center;
+    color: rgb(241, 237, 237);
 }
 @media (max-width: 992px){
     .flex-container {
