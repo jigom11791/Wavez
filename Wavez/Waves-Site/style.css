@@ -5,9 +5,6 @@ body {
     background-color:  #3e3e4f;
     font-family: "Noto sans JP", sans-serif;
 }
-.navbar{
-    padding: 0% 7%;
-}
 #logobar{
     background-color: #000;
 }
@@ -15,6 +12,7 @@ body {
     background-color: #26262c;
     border-top: 1px solid #68686b;
     border-bottom: 1px solid #68686b;
+    padding: 0% 7%;
 }
 a.nav-link{
     color: white;
